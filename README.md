@@ -5,12 +5,10 @@ A Python tool for converting multiple audio files from stereo to mono. The progr
 ## Features
 
 - Converts multiple audio files simultaneously
-- Supports MP3, WAV, AIFF, and AIF formats
+- Supports MP3, WAV and AIFF formats
 - Recursive folder search
 - Creates ZIP file with all converted files
 - Terminal-based user interface
-- Real-time progress bar with visual indicators
-- Comprehensive error handling and validation
 
 ## Installation
 
@@ -46,7 +44,7 @@ python stereo_to_mono.py *.wav *.mp3
 # Name the output ZIP file
 python stereo_to_mono.py file1.wav file2.mp3 -o my_mono_files.zip
 
-# Keep temporary files (for debugging)
+# Keep temporary files 
 python stereo_to_mono.py file1.wav --keep-temp
 
 # Enable verbose output
@@ -81,16 +79,8 @@ Creates `album_mono.zip` with all converted WAV files.
 
 ## Supported Formats
 
-- **Input:** MP3, WAV, AIFF, AIF
+- **Input:** MP3, WAV, AIFF
 - **Output:** Same format as input (with "_mono" suffix)
-
-## Technical Details
-
-- **Stereo to Mono:** Average of both channels
-- **Quality:** Lossless conversion (except MP3)
-- **Memory:** Temporary files are automatically deleted
-- **Performance:** Parallel processing possible
-- **Progress Tracking:** Real-time progress bar with ETA calculation
 
 ## Error Handling
 
