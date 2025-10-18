@@ -1,109 +1,113 @@
 # Stereo to Mono Converter
 
-Ein Python-Tool zum Konvertieren mehrerer Audio-Dateien von Stereo zu Mono. Das Programm unterstützt MP3, WAV und AIFF Dateien und erstellt eine ZIP-Datei mit allen konvertierten Mono-Dateien.
+A Python tool for converting multiple audio files from stereo to mono. The program supports MP3, WAV, and AIFF files and creates a ZIP file with all converted mono files.
 
 ## Features
 
-- Konvertiert mehrere Audio-Dateien gleichzeitig
-- Unterstützt MP3, WAV, AIFF und AIF Formate
-- Rekursive Ordner-Durchsuchung
-- Erstellt ZIP-Datei mit allen konvertierten Dateien
-- Terminal-basierte Benutzeroberfläche
-- Detaillierte Fortschrittsanzeige
-- Fehlerbehandlung und Validierung
+- Converts multiple audio files simultaneously
+- Supports MP3, WAV, AIFF, and AIF formats
+- Recursive folder search
+- Creates ZIP file with all converted files
+- Terminal-based user interface
+- Real-time progress bar with visual indicators
+- Comprehensive error handling and validation
 
 ## Installation
 
-1. **Repository klonen:**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ihr-username/Stereo-to-mono-converter.git
+   git clone https://github.com/your-username/Stereo-to-mono-converter.git
    cd Stereo-to-mono-converter
    ```
 
-2. **Python-Abhängigkeiten installieren:**
+2. **Install Python dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-## Verwendung
+## Usage
 
-### Grundlegende Verwendung
+### Basic Usage
 
 ```bash
-# Einzelne Dateien konvertieren
+# Convert individual files
 python stereo_to_mono.py file1.wav file2.mp3
 
-# Alle Dateien in einem Ordner konvertieren
+# Convert all files in a folder
 python stereo_to_mono.py /path/to/audio/folder/
 
-# Mit Wildcards arbeiten
+# Work with wildcards
 python stereo_to_mono.py *.wav *.mp3
 ```
 
-### Erweiterte Optionen
+### Advanced Options
 
 ```bash
-# Ausgabe-ZIP-Datei benennen
+# Name the output ZIP file
 python stereo_to_mono.py file1.wav file2.mp3 -o my_mono_files.zip
 
-# Temporäre Dateien behalten (für Debugging)
+# Keep temporary files (for debugging)
 python stereo_to_mono.py file1.wav --keep-temp
+
+# Enable verbose output
+python stereo_to_mono.py file1.wav -v
 ```
 
-### Hilfe anzeigen
+### Show Help
 
 ```bash
 python stereo_to_mono.py --help
 ```
 
-## Beispiele
+## Examples
 
-### Beispiel 1: Einzelne Dateien
+### Example 1: Individual Files
 ```bash
 python stereo_to_mono.py song1.wav song2.mp3 song3.aiff
 ```
-Ergebnis: `mono_converted.zip` mit `song1_mono.wav`, `song2_mono.mp3`, `song3_mono.aiff`
+Result: `mono_converted.zip` with `song1_mono.wav`, `song2_mono.mp3`, `song3_mono.aiff`
 
-### Beispiel 2: Ordner verarbeiten
+### Example 2: Process Folder
 ```bash
 python stereo_to_mono.py /Users/username/Music/MyAlbum/
 ```
-Verarbeitet alle Audio-Dateien im Ordner und Unterordnern rekursiv.
+Processes all audio files in the folder and subfolders recursively.
 
-### Beispiel 3: Benutzerdefinierte Ausgabe
+### Example 3: Custom Output
 ```bash
 python stereo_to_mono.py *.wav -o album_mono.zip
 ```
-Erstellt `album_mono.zip` mit allen konvertierten WAV-Dateien.
+Creates `album_mono.zip` with all converted WAV files.
 
-## Unterstützte Formate
+## Supported Formats
 
-- **Eingabe:** MP3, WAV, AIFF, AIF
-- **Ausgabe:** Gleiches Format wie Eingabe (mit "_mono" Suffix)
+- **Input:** MP3, WAV, AIFF, AIF
+- **Output:** Same format as input (with "_mono" suffix)
 
-## Technische Details
+## Technical Details
 
-- **Stereo zu Mono:** Durchschnitt der beiden Kanäle
-- **Qualität:** Verlustfreie Konvertierung (außer MP3)
-- **Speicher:** Temporäre Dateien werden automatisch gelöscht
-- **Performance:** Parallele Verarbeitung möglich
+- **Stereo to Mono:** Average of both channels
+- **Quality:** Lossless conversion (except MP3)
+- **Memory:** Temporary files are automatically deleted
+- **Performance:** Parallel processing possible
+- **Progress Tracking:** Real-time progress bar with ETA calculation
 
-## Fehlerbehandlung
+## Error Handling
 
-Das Programm behandelt verschiedene Fehlerfälle:
-- Nicht unterstützte Dateiformate
-- Beschädigte Audio-Dateien
-- Fehlende Berechtigungen
-- Speicherplatz-Probleme
+The program handles various error cases:
+- Unsupported file formats
+- Corrupted audio files
+- Missing permissions
+- Storage space issues
 
-## Lizenz
+## License
 
-MIT License - siehe LICENSE Datei für Details.
+MIT License - see LICENSE file for details.
 
-## Beitragen
+## Contributing
 
-Pull Requests sind willkommen! Bitte erstellen Sie ein Issue für größere Änderungen.
+Pull requests are welcome! Please create an issue for major changes.
 
 ## Support
 
-Bei Problemen oder Fragen erstellen Sie bitte ein GitHub Issue.
+For problems or questions, please create a GitHub issue.
