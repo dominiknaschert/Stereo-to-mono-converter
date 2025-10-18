@@ -5,7 +5,7 @@ A Python tool for converting multiple audio files from stereo to mono. The progr
 ## Features
 
 - Converts multiple audio files simultaneously
-- Supports MP3, WAV, AIFF, and AIF formats
+- Supports MP3, WAV and AIFF formats
 - Recursive folder search
 - Creates ZIP file with all converted files
 - Terminal-based user interface
