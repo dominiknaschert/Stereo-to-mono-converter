@@ -1,6 +1,7 @@
 # Stereo to Mono Converter
 
-A Python tool for converting multiple audio files from stereo to mono. The program supports MP3, WAV, and AIFF files and creates a ZIP file with all converted mono files.
+A Python tool for converting multiple audio files from stereo to mono. The tool was created to quickly convert whole sample libraries to mono for devices like the Erica Synths Sample Drum or other mono compatible sample players.
+The program supports MP3, WAV, and AIFF files and creates a ZIP file with all converted mono files.
 
 ## Features
 
@@ -82,22 +83,6 @@ Creates `album_mono.zip` with all converted WAV files.
 - **Input:** MP3, WAV, AIFF
 - **Output:** Same format as input (with "_mono" suffix)
 
-## Error Handling
-
-The program handles various error cases:
-- Unsupported file formats
-- Corrupted audio files
-- Missing permissions
-- Storage space issues
-
 ## License
 
 MIT License - see LICENSE file for details.
-
-## Contributing
-
-Pull requests are welcome! Please create an issue for major changes.
-
-## Support
-
-For problems or questions, please create a GitHub issue.
